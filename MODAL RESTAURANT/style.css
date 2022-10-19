@@ -12,3 +12,7 @@ body, html {
     background-position: center;
     background-size: cover;
 }
+
+.w3-modal-size {
+    width: 50%;
+}
