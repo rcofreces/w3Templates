@@ -1,25 +1,12 @@
-/* let btnMenu = document.querySelector(".btn-menu");
-let btnContact = document.querySelector(".btn-contact");
-let btnCloseMenu = document.querySelector(".btn-close-menu");
-let btnCloseContact = document.querySelector(".btn-close-contact");
+let btnBars = document.querySelector(".btn-bars");
 
-function styleBlockMenu() {
-    document.getElementById("menu").style.display = "block";
+function openNav() {
+    let aux = document.getElementById("bars");
+    if (aux.className.indexOf("w3-show") === -1) {
+        aux.className += " w3-show";
+    } else {
+        aux.className = aux.className.replace(" w3-show", "");
+    }
 }
 
-function styleBlockContact() {
-    document.getElementById("contact").style.display = "block";
-}
-
-function styleNoneMenu() {
-    document.getElementById("menu").style.display = "none";
-}
-
-function styleNoneContact() {
-    document.getElementById("contact").style.display = "none";
-}
-
-btnMenu.addEventListener("click", styleBlockMenu);
-btnContact.addEventListener("click", styleBlockContact);
-btnCloseMenu.addEventListener("click", styleNoneMenu);
-btnCloseContact.addEventListener("click", styleNoneContact); */
+btnBars.addEventListener("click", openNav);
